@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-blue-800 text-white flex flex-col gap-5 min-h-screen">
+      <header></header>
+      <main class="flex-grow px-12">
+        <h2 class="text-xl text-center font-bold my-5">User Table</h2>
+        <div id="add-user-btn-container" class="relative min-w-[600px] w-full  mx-auto flex items-center justify-end p-4"></div>
+        <table class="min-w-[600px] w-full bg-white mx-auto">
+          <thead>
+            <tr class="w-full bg-gray-300">
+              <th class="px-4 py-2">#</th>
+              <th class="px-4 py-2">Name</th>
+              <th class="px-4 py-2">Age</th>
+              <th class="px-4 py-2">IsAdmin</th>
+              <th class="px-4 py-2">Hobbies</th>
+              <th class="px-4 py-2" colspan="2">
+                <span>Update</span>
+                <span>Delete</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="data-container">
+            <!-- Dynamic data goes here -->
+          </tbody>
+        </table>
+      </main>
+      <footer class="bg-gray-900 py-4">
+        <h3 class="text-center font-bold px-8 py-2">© oursite.com</h3>
+      </footer>
+    </div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
